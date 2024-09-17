@@ -1,0 +1,16 @@
+# Create Tables
+
+## Attack_stat
+
+CREATE TABLE player_stats (
+    serial SERIAL PRIMARY KEY,     -- Auto-incrementing serial number
+    player_name VARCHAR(100) NOT NULL,  -- Player's name
+    club VARCHAR(100) NOT NULL,    -- Club name
+    position VARCHAR(50) NOT NULL, -- Player's position
+    assists INTEGER NOT NULL,      -- Number of assists
+    corner_taken INTEGER NOT NULL, -- Corners taken
+    offsides INTEGER NOT NULL,     -- Offsides count
+    dribbles INTEGER NOT NULL,     -- Dribbles count
+    match_played INTEGER NOT NULL  -- Matches played
+);
+
